@@ -1,1 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glow & Grace Salon</title>
 
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: #fff8f5;
+            color: #333;
+        }
+
+        header {
+            background: #ffffff;
+            padding: 20px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #333;
+            margin-left: 25px;
+        }
+
+        .hero {
+            min-height: 80vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        .hero h1 {
+            font-size: 55px;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 19px;
+            max-width: 600px;
+            margin-bottom: 30px;
+            line-height: 1.6;
+        }
+
+        .button {
+            display: inline-block;
+            background: #333;
+            color: white;
+            padding: 14px 28px;
+            text-decoration: none;
+            border-radius: 30px;
+        }
+
+        .services {
+            padding: 70px 8%;
+            text-align: center;
+            background: white;
+        }
+
+        .services h2 {
+            font-size: 35px;
+            margin-bottom: 40px;
+        }
+
+        .cards {
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            background: #fff8f5;
+            padding: 30px;
+            width: 250px;
+            border-radius: 15px;
+        }
+
+        .card h3 {
+            margin-bottom: 15px;
+        }
+
+        .contact {
+            padding: 70px 20px;
+            text-align: center;
+        }
+
+        .contact h2 {
+            font-size: 35px;
+            margin-bottom: 20px;
+        }
+
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 25px;
+        }
+
+        @media (max-width: 700px) {
+            header {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            nav a {
+                margin: 0 8px;
+            }
+
+            .hero h1 {
+                font-size: 40px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">Glow & Grace</div>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#services">Services</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section class="hero" id="home">
+        <h1>Beauty. Confidence. You.</h1>
+
+        <p>
+            Welcome to Glow & Grace Salon.
+            Experience professional beauty and styling services
+            in a relaxing and welcoming environment.
+        </p>
+
+        <a href="#contact" class="button">Book an Appointment</a>
+    </section>
+
+    <section class="services" id="services">
+        <h2>Our Services</h2>
+
+        <div class="cards">
+
+            <div class="card">
+                <h3>Hair Styling</h3>
+                <p>Professional cuts, styling and treatments.</p>
+            </div>
+
+            <div class="card">
+                <h3>Makeup</h3>
+                <p>Beautiful makeup for parties and special occasions.</p>
+            </div>
+
+            <div class="card">
+                <h3>Skin Care</h3>
+                <p>Relaxing facials and professional skin treatments.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <h2>Book Your Appointment</h2>
+
+        <p>Call us today to schedule your appointment.</p>
+
+        <br>
+
+        <a href="tel:+919876543210" class="button">
+            Call Now
+        </a>
+    </section>
+
+    <footer>
+        <p>© 2026 Glow & Grace Salon. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
